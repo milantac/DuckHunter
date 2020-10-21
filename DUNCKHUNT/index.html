@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="../DUNCKHUNT/style/style.css">
+  <title>EVAL DUNCKHUNT</title>
+
+  <style>
+    #corps{
+      background-color: black;
+      width: 75%;
+      margin: auto 10%;
+      }
+    #container{
+      background-image: url(../DUNCKHUNT/images/logo.jpeg);
+      background-repeat: no-repeat;
+      width: 1033PX;
+      height: 700px;
+      margin: 20px auto 0 auto;
+      padding: 10px;
+      position: relative;
+      border: 4px solid green;
+    }
+    #duck             /* modificaion du style de la div avec l'id duck*/
+    {
+      width: 100px;
+      height: 88px;
+      background-image: url(../DUNCKHUNT/images/bipbip2.png);/*on mais en image de fond l'image de Bipbip*/
+      background-size: 100%;
+      background-repeat: no-repeat;
+      position: absolute;
+    }
+    #container2{
+      background-color:blanchedalmond;
+      width: 1033PX;
+      height: auto;
+      margin: 0 auto 50px auto;
+      position: relative;
+      border: 1px dotted green;
+      text-align: start;
+    }
+    </style>
+</head>
+<body>
+  <h1>DUCKHUNT</h1>
+  
+  <div id="corps">
+    
+    <div id="container" style="cursor:url(../DUNCKHUNT/images/vilCoyoteCurseur1.png),auto;"> <!----------pour changer le curseur seulement sur toute la div container-------------->
+      <div id="duck"><!--------------------div pour BipBip--------------------></div>
+      <div id="hunter"><!--------------------div pour Vilcoyote--------------------></div>
+    </div>
+
+    <div id="container2"> <!-- container ou on afficher les scores et le temps-->
+        <strong>Temps écoulé (en s): <span id="timer"></span></strong><br>
+        <strong>Canard:      <span id="ptsDuck"></span>pts</strong><br>
+        <strong>Chasseur:      <span id="scoreHunter"></span>pts</strong>
+    </div>
+
+  </div>
+  <script src="../DUNCKHUNT/script/script.js"></script>
+</body>
+</html>
